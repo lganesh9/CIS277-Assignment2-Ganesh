@@ -23,5 +23,5 @@ public:
 private:
     std::size_t size;
     MemoryPool pool;
-    Queue <PacketDescriptor> q;
+    MyQueue <PacketDescriptor> q;
 };

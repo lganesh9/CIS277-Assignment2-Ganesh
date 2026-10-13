@@ -2,17 +2,17 @@
 
 template <typename T>
 
-class Queue
+class MyQueue
 {
 public:
-    explicit Queue(std::size_t capacity){
+    explicit MyQueue(std::size_t capacity){
         arr = new T[capacity];
         count = 0;
         frontIndex = capacity / 2;
         rear = frontIndex;
         arrSize = capacity;
     }
-    ~Queue(){ delete[] arr;}
+    ~MyQueue(){ delete[] arr;}
     bool enqueue(const T& value){
         if (full())
         return false;
